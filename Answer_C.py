@@ -1,28 +1,3 @@
-# ================================================================
-# TRL7100 - ASSIGNMENT 1 - QUESTION (c)
-# Detailed descriptive statistics of speed and tangential acceleration
-#
-# FINAL VERSION
-# IMPORTANT:
-#   1. Edit DATA_ROOT only if your main data-folder path is different.
-#   2. RAW_data_file_1 is EXPLICITLY EXCLUDED.
-#   3. ONLY the six vehicle folders listed below are analysed.
-#   4. Speed: one Avg. Speed observation per Track ID per source CSV.
-#   5. Acceleration: every valid Tan. Acc. observation is retained.
-#   6. Outliers: 1.5 x IQR rule; flagged, NOT deleted.
-#   7. 95% CI: Student-t confidence interval for the mean.
-#
-# The program creates:
-#   - Detailed CSV statistical tables
-#   - Outlier tables and actual outlier observations
-#   - Clean/processed datasets
-#   - Data-quality/file-processing audit
-#   - High-resolution figures
-#   - Excel workbook
-#   - HTML report
-#   - Assignment-ready interpretation text
-# ================================================================
-
 from pathlib import Path
 import sys
 import subprocess
@@ -31,10 +6,6 @@ import re
 import html
 import math
 
-# -------------------- Dependency check ---------------------------
-# pandas/openpyxl/matplotlib/scipy are normally installed.
-# If openpyxl is missing, try installing it automatically so that
-# the Excel workbook can also be produced.
 REQUIRED = {
     "pandas": "pandas",
     "numpy": "numpy",
