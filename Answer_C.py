@@ -9,7 +9,7 @@ import math
 REQUIRED = {
     "pandas": "pandas",
     "numpy": "numpy",
-    "matplotlib": "matplotlib",
+    "matplotlib": "matplotlib" ,
     "scipy": "scipy",
     "openpyxl": "openpyxl",
 }
