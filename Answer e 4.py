@@ -6,9 +6,7 @@ from pathlib import Path
 from scipy.stats import chi2
 
 
-# ================================================================
-# 1. DATA PATH
-# ================================================================
+
 
 BASE_PATH = Path(
     r"C:\Users\admin\Desktop\TRIP\Mathematical Modal-Sai Chand-3-C\TRL-700 DATA FILES"
